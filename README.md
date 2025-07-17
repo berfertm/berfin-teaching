@@ -41,50 +41,6 @@
     </div>
   </section>
 
-  <!-- Services Section -->
-  <section id="services" class="bg-gray-100 py-20 px-4">
-    <h2 class="text-3xl font-bold text-center mb-10">Services</h2>
-    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition" onclick="openModal('general')">
-        <h3 class="text-xl font-semibold mb-2">General English</h3>
-        <p>Grammar, vocabulary, fluency, and daily conversation practice.</p>
-        <button class="text-blue-600 mt-4">Learn More</button>
-      </div>
-      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition" onclick="openModal('business')">
-        <h3 class="text-xl font-semibold mb-2">Business English</h3>
-        <p>Emails, presentations, meetings, and workplace communication.</p>
-        <button class="text-blue-600 mt-4">Learn More</button>
-      </div>
-      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition" onclick="openModal('exam')">
-        <h3 class="text-xl font-semibold mb-2">Exam Prep</h3>
-        <p>Preparation for IELTS, TOEFL, and Cambridge exams.</p>
-        <button class="text-blue-600 mt-4">Learn More</button>
-      </div>
-    </div>
-
-    <!-- Modals -->
-    <div id="modal-general" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
-      <div class="bg-white p-6 rounded-lg w-3/4 max-w-lg">
-        <h3 class="text-xl font-bold mb-4">General English</h3>
-        <p>Develop all-round skills in speaking, reading, writing, and listening. Lessons are tailored to your current level and goals.</p>
-        <button class="mt-4 text-red-500" onclick="closeModal('general')">Close</button>
-      </div>
-    </div>
-    <div id="modal-business" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
-      <div class="bg-white p-6 rounded-lg w-3/4 max-w-lg">
-        <h3 class="text-xl font-bold mb-4">Business English</h3>
-        <p>Focus on professional communication: reports, emails, meetings, and presentations. Includes role-plays and industry vocabulary.</p>
-        <button class="mt-4 text-red-500" onclick="closeModal('business')">Close</button>
-      </div>
-    </div>
-    <div id="modal-exam" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
-      <div class="bg-white p-6 rounded-lg w-3/4 max-w-lg">
-        <h3 class="text-xl font-bold mb-4">Exam Preparation</h3>
-        <p>Intensive exam practice with feedback, strategies, and mock tests for IELTS, TOEFL, and Cambridge exams.</p>
-        <button class="mt-4 text-red-500" onclick="closeModal('exam')">Close</button>
-      </div>
-    </div>
-  </section>
 
   <!-- Contact Section -->
   <section id="contact" class="py-20 px-4 max-w-3xl mx-auto">
