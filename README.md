@@ -7,25 +7,7 @@
   <title>Teaching Website</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <script>
-    function toggleMenu() {
-      const menu = document.getElementById('mobile-menu');
-      menu.classList.toggle('hidden');
-    }
-    function openModal(service) {
-      document.getElementById(`modal-${service}`).classList.remove('hidden');
-    }
-    function closeModal(service) {
-      document.getElementById(`modal-${service}`).classList.add('hidden');
-    }
-    function validateForm() {
-      const name = document.forms["contactForm"]["name"].value;
-      const email = document.forms["contactForm"]["email"].value;
-      const message = document.forms["contactForm"]["message"].value;
-      if (!name || !email || !message) {
-        alert("Please fill out all fields.");
-        return false;
-      }
-      return true;
+  
     }
   </script>
 </head>
@@ -39,28 +21,7 @@
           <a href="#about" class="hover:text-blue-600">About</a>
           <a href="#services" class="hover:text-blue-600">Services</a>
           <a href="#contact" class="hover:text-blue-600">Contact</a>
-        </div>
-        <div class="md:hidden">
-          <button onclick="toggleMenu()">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-    <div id="mobile-menu" class="hidden md:hidden px-4 pb-4">
-      <a href="#about" class="block py-2">About</a>
-      <a href="#services" class="block py-2">Services</a>
-      <a href="#contact" class="block py-2">Contact</a>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section class="bg-gradient-to-r from-blue-500 to-indigo-600 text-white text-center py-32" id="hero">
-    <h1 class="text-4xl font-bold mb-4">Personalized Online English Lessons</h1>
-    <p class="text-xl">Learn with a certified, passionate English teacher</p>
-  </section>
+  
 
   <!-- About Section -->
   <section id="about" class="py-20 px-4 max-w-6xl mx-auto">
