@@ -16,6 +16,8 @@
           <li><a href="#services" class="hover:text-blue-600">Services</a></li>
           <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
           <li><a href="#calendar" class="hover:text-blue-600">Calendar</a></li>
+          <li><a href="#where-to-find" class="hover:text-blue-600">Where to Find Me</a></li>
+          <li><a href="#reviews" class="hover:text-blue-600">Reviews</a></li>
         </ul>
       </nav>
     </header>
@@ -143,14 +145,122 @@
         <div class="font-semibold text-blue-600">Sat</div>
       </div>
       <div class="flex justify-between mt-4 max-w-xs mx-auto">
-        <button id="prevMonth" class="px-3 py-1 rounded bg-blue-600 text-white hover:bg-blue-700">
+        <button
+          id="prevMonth"
+          class="px-3 py-1 rounded bg-blue-600 text-white hover:bg-blue-700"
+        >
           Prev
         </button>
         <div id="monthYear" class="font-semibold text-lg text-blue-700"></div>
-        <button id="nextMonth" class="px-3 py-1 rounded bg-blue-600 text-white hover:bg-blue-700">
+        <button
+          id="nextMonth"
+          class="px-3 py-1 rounded bg-blue-600 text-white hover:bg-blue-700"
+        >
           Next
         </button>
       </div>
+    </section>
+
+    <!-- Where to Find Me Section -->
+    <section
+      id="where-to-find"
+      class="py-16 px-6 scroll-mt-20 max-w-4xl mx-auto bg-white rounded-lg shadow-md"
+    >
+      <h2 class="text-3xl font-bold mb-8 text-center text-blue-700">Where to Find Me</h2>
+      <div class="grid md:grid-cols-3 gap-6 text-center">
+        <a
+          href="https://preply.in/BERFIN6EN15366696"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="bg-blue-100 hover:bg-blue-200 rounded-lg p-6 shadow-md transition flex flex-col items-center"
+        >
+          <img
+            src="https://seeklogo.com/images/P/preply-logo-1F14F1980B-seeklogo.com.png"
+            alt="Preply Logo"
+            class="h-16 mb-4"
+          />
+          <h3 class="text-xl font-semibold text-blue-800 mb-2">Preply</h3>
+          <p class="text-sm text-blue-700">Find me on Preply for personalized lessons</p>
+        </a>
+        <a
+          href="https://www.superprof.it/insegnante-inglese-esperta-con-certificazione-celta-cambridge-laurea-lingua-letteratura-inglese-offro-lezioni-per.html"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="bg-yellow-100 hover:bg-yellow-200 rounded-lg p-6 shadow-md transition flex flex-col items-center"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Superprof_logo.svg/2560px-Superprof_logo.svg.png"
+            alt="Superprof Italy Logo"
+            class="h-16 mb-4"
+          />
+          <h3 class="text-xl font-semibold text-yellow-800 mb-2">Superprof IT</h3>
+          <p class="text-sm text-yellow-700">Experienced tutor on Superprof Italy</p>
+        </a>
+        <a
+          href="https://www.superprof.com.tr/celta-sertifikali-ana-dili-ingilizce-seviyesi-ogretmenden-ilkokul-ortaokul-lise-universite-ogrencilerine-sinava-yonelik.html"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="bg-red-100 hover:bg-red-200 rounded-lg p-6 shadow-md transition flex flex-col items-center"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Superprof_logo.svg/2560px-Superprof_logo.svg.png"
+            alt="Superprof Turkey Logo"
+            class="h-16 mb-4"
+          />
+          <h3 class="text-xl font-semibold text-red-800 mb-2">Superprof TR</h3>
+          <p class="text-sm text-red-700">Find me on Superprof Turkey</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section
+      id="reviews"
+      class="py-16 px-6 scroll-mt-20 max-w-4xl mx-auto bg-white rounded-lg shadow-md"
+    >
+      <h2 class="text-3xl font-bold mb-8 text-center text-blue-700">Reviews</h2>
+
+      <!-- Reviews list -->
+      <div id="reviewsList" class="space-y-6 mb-12 max-h-96 overflow-y-auto p-4 border rounded">
+        <!-- Reviews inserted here dynamically -->
+      </div>
+
+      <!-- Review form -->
+      <form id="reviewForm" class="max-w-lg mx-auto space-y-4">
+        <input
+          type="text"
+          id="reviewerName"
+          placeholder="Your Name"
+          class="w-full border p-3 rounded"
+          required
+        />
+        <select
+          id="reviewRating"
+          class="w-full border p-3 rounded"
+          required
+          aria-label="Rating"
+        >
+          <option value="" disabled selected>Rating (1 to 5 stars)</option>
+          <option value="5">★★★★★ 5 Stars</option>
+          <option value="4">★★★★ 4 Stars</option>
+          <option value="3">★★★ 3 Stars</option>
+          <option value="2">★★ 2 Stars</option>
+          <option value="1">★ 1 Star</option>
+        </select>
+        <textarea
+          id="reviewComment"
+          rows="4"
+          placeholder="Write your review here..."
+          class="w-full border p-3 rounded"
+          required
+        ></textarea>
+        <button
+          type="submit"
+          class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700"
+        >
+          Submit Review
+        </button>
+      </form>
     </section>
 
     <!-- Footer -->
@@ -210,134 +320,4 @@
       <div class="bg-white p-6 rounded-xl max-w-md">
         <h3 class="text-xl font-bold mb-4">General English</h3>
         <p>
-          Improve your speaking, listening, reading, and writing skills with
-          dynamic, conversation-focused lessons.
-        </p>
-        <button
-          onclick="toggleModal('modal1')"
-          class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
-        >
-          Close
-        </button>
-      </div>
-    </div>
-    <div
-      id="modal2"
-      class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center"
-    >
-      <div class="bg-white p-6 rounded-xl max-w-md">
-        <h3 class="text-xl font-bold mb-4">Business English</h3>
-        <p>
-          Tailored lessons to help you write emails, give presentations, and
-          speak confidently in meetings and interviews.
-        </p>
-        <button
-          onclick="toggleModal('modal2')"
-          class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
-        >
-          Close
-        </button>
-      </div>
-    </div>
-    <div
-      id="modal3"
-      class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center"
-    >
-      <div class="bg-white p-6 rounded-xl max-w-md">
-        <h3 class="text-xl font-bold mb-4">Exam Prep</h3>
-        <p>
-          Targeted preparation for IELTS, TOEFL, and Cambridge exams with
-          practice tests, tips, and feedback.
-        </p>
-        <button
-          onclick="toggleModal('modal3')"
-          class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
-        >
-          Close
-        </button>
-      </div>
-    </div>
-
-    <!-- Scripts -->
-    <script>
-      // Modal toggle function
-      function toggleModal(id) {
-        const modal = document.getElementById(id);
-        modal.classList.toggle("hidden");
-      }
-
-      // Contact form handler with fake success message
-      document.getElementById("contactForm").addEventListener("submit", function (e) {
-        e.preventDefault();
-        document.getElementById("formSuccess").classList.remove("hidden");
-        this.reset();
-      });
-
-      // Calendar
-      const calendarContainer = document.getElementById("calendar-container");
-      const monthYear = document.getElementById("monthYear");
-      const prevBtn = document.getElementById("prevMonth");
-      const nextBtn = document.getElementById("nextMonth");
-
-      let currentDate = new Date();
-
-      function renderCalendar(date) {
-        // Clear previous days
-        calendarContainer.querySelectorAll(".day").forEach((el) => el.remove());
-
-        const year = date.getFullYear();
-        const month = date.getMonth();
-
-        // Month & Year text
-        monthYear.textContent = date.toLocaleDateString("en-US", {
-          month: "long",
-          year: "numeric",
-        });
-
-        // First day of the month (Sun=0)
-        const firstDayIndex = new Date(year, month, 1).getDay();
-        // Days in month
-        const daysInMonth = new Date(year, month + 1, 0).getDate();
-
-        // Add empty slots for days before first day
-        for (let i = 0; i < firstDayIndex; i++) {
-          const emptyDiv = document.createElement("div");
-          emptyDiv.classList.add("day");
-          calendarContainer.appendChild(emptyDiv);
-        }
-
-        // Add days
-        for (let day = 1; day <= daysInMonth; day++) {
-          const dayDiv = document.createElement("div");
-          dayDiv.classList.add("day", "p-2", "rounded", "cursor-pointer", "hover:bg-blue-200");
-
-          // Highlight today
-          const today = new Date();
-          if (
-            day === today.getDate() &&
-            month === today.getMonth() &&
-            year === today.getFullYear()
-          ) {
-            dayDiv.classList.add("bg-blue-400", "text-white", "font-semibold");
-          }
-
-          dayDiv.textContent = day;
-          calendarContainer.appendChild(dayDiv);
-        }
-      }
-
-      prevBtn.addEventListener("click", () => {
-        currentDate.setMonth(currentDate.getMonth() - 1);
-        renderCalendar(currentDate);
-      });
-
-      nextBtn.addEventListener("click", () => {
-        currentDate.setMonth(currentDate.getMonth() + 1);
-        renderCalendar(currentDate);
-      });
-
-      // Initial render
-      renderCalendar(currentDate);
-    </script>
-  </body>
-</html>
+          Improve your speaking, listening, reading, and
