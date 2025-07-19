@@ -1,1 +1,1 @@
-<img src="assets/me.jpg" alt="English Tutor">
+<img src="assets/me.jpg" alt="English Tutor" class="rounded-xl shadow-lg w-full max-w-xs object-cover" />
